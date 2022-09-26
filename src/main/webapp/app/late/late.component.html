@@ -1,0 +1,6 @@
+<div class="container">
+  <div class="wrapper">
+    <div *ngFor="let photo of absentStudents" class="icon absent" style="background-image: url({{ photo.image }})"></div>
+    <div *ngFor="let photo of lateStudents" class="icon late" style="background-image: url({{ photo.image }})"></div>
+  </div>
+</div>

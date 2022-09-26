@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <div class="icon-wrapper" [ngStyle]="{ 'left.%': percentage }">
+    <i class="icon">😍</i>
+  </div>
+  <div class="legend-wrapper">
+    <span class="legend">{{ '*' + numberOfVotes() + ' votes' }}</span>
+  </div>
+  <div class="rounded-wrapper">
+    <div class="content" [ngStyle]="{ 'width.%': percentage }"></div>
+  </div>
+</div>

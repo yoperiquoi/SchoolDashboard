@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="card d-flex flex-column">
+    <ul class="card-body overflow-hidden">
+      <li *ngFor="let post of displayedPosts" class="row mb-2">
+        <div class="col-">
+          <div class="container pr-0">
+            <div style="background-image: url({{ post.image }})" class="icon rounded-circle"></div>
+          </div>
+        </div>
+        <div class="col d-flex align-items-center">
+          <div>
+            {{ post.author }}<br />
+            <small>{{ post.date.hour() + 'h' + post.date.minutes() + ' : ' + post.text }}</small>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

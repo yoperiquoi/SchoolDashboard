@@ -1,0 +1,73 @@
+<div id="main" class="d-flex flex-column">
+  <div class="row">
+    <div class="col">
+      <jhi-poll></jhi-poll>
+    </div>
+    <div class="col">
+      <div class="head-info">
+        <jhi-end-day></jhi-end-day>
+        <jhi-hour></jhi-hour>
+        <jhi-break></jhi-break>
+      </div>
+      <div class="row justify-content-center">
+        <jhi-jokes></jhi-jokes>
+      </div>
+    </div>
+    <div class="col">
+      <jhi-hearts></jhi-hearts>
+    </div>
+  </div>
+  <div class="row narrow">
+    <div class="col-2 mh-100 d-flex flex-column">
+      <div class="row">
+        <jhi-events></jhi-events>
+      </div>
+      <div class="row narrow">
+        <jhi-posts class="mh-100"></jhi-posts>
+      </div>
+    </div>
+    <div class="col-8">
+      <div *ngIf="tab === CALENDAR">
+        <jhi-calendar></jhi-calendar>
+      </div>
+      <div *ngIf="tab === TROMBINOSCOPE" class="h-100">
+        <jhi-trombinoscope></jhi-trombinoscope>
+      </div>
+      <div *ngIf="tab === VIDEO" class="video">
+        <!-- Video -->
+        <jhi-video class="video"> </jhi-video>
+      </div>
+      <div *ngIf="tab === GALLERY" class="galerie">
+        <!-- Galerie -->
+        <jhi-galerie class="galerie"></jhi-galerie>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="row">
+        <jhi-renders> </jhi-renders>
+      </div>
+      <div class="row mt-3">
+        <jhi-birthdays> </jhi-birthdays>
+      </div>
+      <div class="row">
+        <jhi-late></jhi-late>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <button class="nav-link" [class.active]="tab === CALENDAR" active (click)="setTab(CALENDAR)">Calendrier</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" [class.active]="tab === TROMBINOSCOPE" (click)="setTab(TROMBINOSCOPE)">Trombinoscope</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" [class.active]="tab === VIDEO" (click)="setTab(VIDEO)">Vidéo</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" [class.active]="tab === GALLERY" (click)="setTab(GALLERY)">Galerie</button>
+      </li>
+    </ul>
+  </div>
+</div>

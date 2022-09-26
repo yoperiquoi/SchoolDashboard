@@ -1,0 +1,15 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<div class="main">
+  <div class="container">
+    <ul class="wrapper">
+      <li *ngFor="let photo of displayedStudents" class="item">
+        <div class="icon {{ photo.state }}" style="background-image: url({{ photo.image }})"></div>
+        <span class="legend">{{ photo.legend }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="buttons">
+    <button class="btn" (click)="sort()"><i class="material-icons">sort</i>Trier</button>
+    <button class="btn" (click)="shuffle()"><i class="material-icons">shuffle</i>Mélanger</button>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<mat-card [ngStyle]="{ backgroundColor: backgroundColor }" *ngIf="event.eventHour !== '' && event.eventArea !== ''" class="event-container">
+  <h5 class="eventHour">{{ event.eventHour }}</h5>
+  <h5 class="eventName">{{ event.eventName }}</h5>
+  <h5 class="eventArea">{{ event.eventArea }}</h5>
+</mat-card>
+
+<mat-card
+  [ngStyle]="{ backgroundColor: backgroundColor }"
+  *ngIf="event.eventHour !== '' && event.eventArea === ''"
+  class="event-container1"
+>
+  <h5 class="eventHour">{{ event.eventHour }}</h5>
+  <h5 class="eventName">{{ event.eventName }}</h5>
+</mat-card>
+
+<mat-card
+  [ngStyle]="{ backgroundColor: backgroundColor }"
+  *ngIf="event.eventHour === '' && event.eventArea !== ''"
+  class="event-container1"
+>
+  <h5 class="eventName">{{ event.eventName }}</h5>
+  <h5 class="eventArea">{{ event.eventArea }}</h5>
+</mat-card>
+
+<mat-card
+  [ngStyle]="{ backgroundColor: backgroundColor }"
+  *ngIf="event.eventHour === '' && event.eventArea === ''"
+  class="event-container2"
+>
+  <h5 class="eventName">{{ event.eventName }}</h5>
+</mat-card>

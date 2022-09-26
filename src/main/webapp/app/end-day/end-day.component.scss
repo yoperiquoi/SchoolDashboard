@@ -1,0 +1,40 @@
+.koko-logo {
+  height: 30%;
+  width: 45%;
+  background-image: url('../assets/Koko.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.koko {
+  position: relative;
+  height: 90px;
+  width: 90px;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+.koko-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  height: 78px;
+  width: 78px;
+  border-radius: 50%;
+  background-image: url('../assets/Beer1.png'), url('../assets/Beer2.png');
+  background-size: 16rem 8rem;
+  background-repeat: repeat-x;
+  animation: flow 60s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    background-position: -120rem 2rem;
+  }
+  100% {
+    // background-position: 0px -50px;
+    background-position: 0px 2rem;
+  }
+}

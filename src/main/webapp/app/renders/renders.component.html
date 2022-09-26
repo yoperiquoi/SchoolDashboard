@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="card d-flex flex-column">
+    <ul class="card-body overflow-hidden mb-0 py-1">
+      <li *ngFor="let render of displayedRenders" class="row mb-2 ml-2 d-flex">
+        <div class="col-">
+          <span class="icon">
+            {{ render.icon }}
+          </span>
+        </div>
+        <div class="col d-flex align-items-center">
+          <div>
+            {{ render.title }}<br />
+            <small>{{ render.date.dayNumber() + ' ' + render.date.month() }}</small>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

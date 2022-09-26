@@ -1,0 +1,45 @@
+.handle,
+.cup {
+  border: 3px solid #333;
+}
+
+.handle {
+  height: 50px;
+  width: 30px;
+  background-color: transparent;
+  position: relative;
+  left: -3px;
+  border-radius: 0 15px 50px 0;
+}
+
+.cup {
+  position: relative;
+  border: 3px solid #333;
+  height: 90px;
+  width: 90px;
+  border-radius: 0 0 50% 50%;
+  background-repeat: repeat-x;
+  animation: flowbreak 30s linear infinite;
+}
+
+.cup-content {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  height: 78px;
+  width: 78px;
+  border-radius: 0 0 50% 50%;
+  background-image: url('../assets/Coffee1.png'), url('../assets/Coffee2.png');
+  background-size: 400% 175%;
+  background-repeat: repeat-x;
+  animation: flowbreak 30s linear infinite;
+}
+
+@keyframes flowbreak {
+  0% {
+    background-position: -2100px 6rem;
+  }
+  100% {
+    background-position: 0 -3rem;
+  }
+}

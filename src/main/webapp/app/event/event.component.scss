@@ -1,0 +1,43 @@
+mat-card {
+  height: 4rem !important;
+  padding: 10px 16px;
+  overflow: hidden;
+}
+
+.event-container {
+  background-color: cadetblue;
+  height: 7rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.event-container1 {
+  background-color: cadetblue;
+  height: 7rem;
+}
+
+.event-container2 {
+  display: flex;
+  background-color: grey;
+  height: 7rem;
+  align-items: center;
+  justify-content: center;
+}
+.eventHour,
+.eventName,
+.eventArea {
+  margin-bottom: 0;
+}
+.eventHour {
+  font-size: 0.7rem;
+  color: #3d3d3d;
+}
+.eventName {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.eventArea {
+  font-size: 0.7rem;
+  text-align: center;
+  color: #3d3d3d;
+}

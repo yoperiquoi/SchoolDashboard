@@ -1,0 +1,24 @@
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-items: center;
+}
+
+.wrapper {
+  height: 10rem;
+  width: max-content;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  transition: height 0.2s; /* Animation */
+}
+
+.image {
+  height: 100%;
+  width: auto;
+  border-radius: 5%;
+}
+
+.wrapper:hover {
+  height: 15rem;
+}

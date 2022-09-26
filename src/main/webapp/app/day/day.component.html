@@ -1,0 +1,9 @@
+<mat-card class="day-container">
+  <mat-card class="date-container py-0">
+    <h5 class="dayName mb-0">{{ day.dayName }}</h5>
+    <h3 class="dayDate">{{ day.dayDate }}</h3>
+  </mat-card>
+  <mat-card class="events-container px-0">
+    <jhi-event *ngFor="let event of listEvents" [event]="event"></jhi-event>
+  </mat-card>
+</mat-card>

@@ -1,0 +1,20 @@
+.day-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.events-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 0.95rem;
+}
+
+.dayName {
+  text-align: center;
+  font-size: 1rem;
+  color: #737373;
+}
+.dayDate {
+  text-align: center;
+}

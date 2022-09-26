@@ -1,0 +1,8 @@
+.calendar-container {
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+  justify-content: space-around;
+}

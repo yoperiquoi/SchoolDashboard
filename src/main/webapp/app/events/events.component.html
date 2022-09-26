@@ -1,0 +1,20 @@
+<ul class="container">
+  <li *ngFor="let event of displayedEvents" class="card mb-3">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-">
+          <div class="container pr-0">
+            <div style="background-image: url({{ event.image }})" class="icon rounded-circle"></div>
+          </div>
+        </div>
+        <div class="col d-flex align-items-center">
+          <div>
+            {{ event.label }}<br />
+            <small>{{ event.date.dayNumber() + ' ' + event.date.month() + ' - ' + event.date.hour() + 'h' + event.date.minutes() }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card thumbs">👍 {{ event.thumbsUp }}</div>
+  </li>
+</ul>

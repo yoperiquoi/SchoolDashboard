@@ -1,0 +1,28 @@
+:host {
+  width: 100%;
+}
+
+.container,
+.card {
+  height: 100%;
+  overflow: hidden;
+}
+
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+  border: none;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+  background-size: cover;
+  background-position: center;
+  border: solid #1d9bf0 3px;
+}
+
+small {
+  font-size: 0.8rem;
+  color: #c4c4c4;
+}

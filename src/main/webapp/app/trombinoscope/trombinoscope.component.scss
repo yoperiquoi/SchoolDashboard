@@ -1,0 +1,66 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  column-gap: 2rem;
+  padding: 1rem 0.5rem;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  height: 7rem;
+  width: 7rem;
+  background-size: cover;
+  background-position: center;
+  border: solid 5px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.absent {
+  border-color: #ea596e;
+}
+
+.late {
+  border-color: #e9d44d;
+}
+
+.here {
+  border-color: #77b255;
+}
+
+.legend {
+  color: #777777;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 3.5rem;
+}
+
+.btn {
+  color: #777;
+  display: flex;
+  column-gap: 0.5rem;
+  border: solid 1px #777;
+  border-radius: 10000000000000px;
+}
